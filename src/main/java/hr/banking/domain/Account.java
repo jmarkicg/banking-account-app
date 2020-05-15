@@ -16,9 +16,9 @@ public class Account {
 
     private Owner owner;
 
-    private Long balance;
+    private Float balance;
 
-    public Account(Owner owner, Long balance){
+    public Account(Owner owner, Float balance){
         this.owner = owner;
         this.balance = balance;
     }

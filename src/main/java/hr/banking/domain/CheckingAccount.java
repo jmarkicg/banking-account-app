@@ -7,9 +7,10 @@ import lombok.Setter;
 @Getter
 public class CheckingAccount extends Account{
 
-    private Long limit;
+    /* The account limit stored as negative value e.g. -1000. */
+    private Float limit;
 
-    public CheckingAccount(Owner owner, Long balance, Long limit) {
+    public CheckingAccount(Owner owner, Float balance, Float limit) {
         super(owner, balance);
         this.limit = limit;
     }

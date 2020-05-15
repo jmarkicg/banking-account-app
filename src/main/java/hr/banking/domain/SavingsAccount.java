@@ -7,9 +7,10 @@ import lombok.Setter;
 @Getter
 public class SavingsAccount extends Account {
 
+    /* The interest rate stored as percentage value e.g. 3.5 */
     private Float interestRate;
 
-    public SavingsAccount(Owner owner, Long balance, Float interestRate) {
+    public SavingsAccount(Owner owner, Float balance, Float interestRate) {
         super(owner, balance);
         this.interestRate = interestRate;
     }
